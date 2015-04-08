@@ -1,4 +1,7 @@
 
+.coverage
+.htmlcov/status.dat
+htmlcov/*
 *.exe
 *.pyc
 *.html

@@ -1,4 +1,5 @@
-
+.coverage
+htmlcov/status.dat
 /.coverage
 /.htmlcov/status.dat
 htmlcov/*

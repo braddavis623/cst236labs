@@ -1,7 +1,7 @@
 Source Example
 ==============
 
-Source1 provides functions for describing a triangle.
+Source1 provides functions for describing a triangle, as well as a rhombus.
 
 Determining Triangle Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -16,6 +16,19 @@ Scalene Example
 >>> get_triangle_type(1, 2, 3)
 'scalene'
 
+Determining Rhombus Type
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+The function :func:`source.source1.get_rhombus_type` provides users with a way to provide a set of four sides
+or angles of a rhombus and returns the type of rhombus ("square", "rectangle", "rhombus", "disconnected object",
+or "invalid")
+
+Square Example
+^^^^^^^^^^^^^^^
+
+>>> from source.source1 import get_rhombus_type
+>>> get_rhombus_type(2, 2, 2, 2)
+'square'
 
 
 Module Reference

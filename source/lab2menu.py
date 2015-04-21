@@ -11,13 +11,16 @@ def do_something(a=' '):
     Determine what to do with the command given
 
     :param a: Command
-    :type a: char
+    :type a: str
 
     :return: 'quitting'
     :rtype: str
     """
     if a == 'X':
         return 'quitting'
-    else:
-        if a == '?':
+    elif a == '?':
             return 'giving options'
+    elif a == 'd':
+        return 'generating orc listing..'
+    elif a == 'ENTer the trees':
+        return 'you win'

@@ -2,74 +2,89 @@
 :mod:`source.lab2round1orc` -- Example source code
 ============================================
 
-The following example code gives the distance  or velocity of an orc (arbitrary)
+The following example code defines a rather hollow orc class
 """
 import random
 
 
-class Orc:
-
-    def __init__(self, d=0, v=0, t=1):
-        self.velocity = v
-        self.distance = d
-        self.type = t
-        self.id = random.randint(1, 100000)
-        self.alive = True
-        self.priority = 0
-
-    def get_orc_distance(self):
+def get_orc_distance(d=0):
         """
         returns a distance for an orc
 
         :return: an int
         :rtype: int
         """
-        return self.distance
+        return d
 
-    def get_orc_velocity(self):
+
+def get_orc_velocity(v=0):
         """
         returns a velocity for an orc
 
         :return: an int
         :rtype: int
         """
-        return self.velocity
+        return v
 
-    def get_orc_type(self):
+
+def get_orc_type(t=0):
         """
         returns a type for an orc
 
         :return: an int
         :rtype: int
         """
-        return self.type
+        return t
 
-    def get_orc_id(self):
+
+def get_orc_id(i=0):
         """
         returns an id for an orc
 
         :return: an int
         :rtype: int
         """
-        return self.id
+        return i
 
-    def remove_orc(self, i=0):
+
+def set_orc_id(i=0):
+        """
+        returns an id for an orc
+
+        :return: an int
+        :rtype: int
+        """
+        return i
+
+
+def remove_orc():
         """
         changes the state of an orc so it can be removed
 
         :return: False
         :rtype: boolean
         """
-        if self.id == i:
-            self.alive = False
-        return self.alive
 
-    def set_orc_priority(self, p=0):
+        return False
+
+
+def set_orc_priority(p=0):
         """
         returns a priority for an orc
 
         :return: an int
         :rtype: int
         """
-        self.priority = p
-        return self.priority
+
+        return p
+
+
+def get_orc_by_id(i=0):
+        """
+        gets the orc by id for reference
+
+        :return: self
+        :rtype: orc
+        """
+
+        return i

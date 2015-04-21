@@ -6,7 +6,7 @@ The following example code determines if the nearest orc is closer than the defe
 """
 
 
-def detect_breach(a=0, b=0):
+def detect_breached(a=0, b=0):
     """
     Determine if the given triangle is equilateral, scalene or Isosceles
 
